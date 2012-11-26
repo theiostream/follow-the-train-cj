@@ -1,3 +1,5 @@
+<img src="https://raw.github.com/theiostream/follow-the-train-cj/master/train.png">
+
 <img src="https://raw.github.com/theiostream/follow-the-train-cj/master/36huro.jpg">
 
 <img src="https://raw.github.com/theiostream/follow-the-train-cj/master/3qcx9x.jpg">
