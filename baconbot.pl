@@ -23,14 +23,14 @@ sub said {
 	
 	if ($dict->{body} =~ m/(check|read|look|see).*PM/i) {
 		my $chan = $dict->{channel};
-		my $dude = uc $dict->{who};
+		my $dude = $dict->{who};
 		
-		$self->qsay($chan, "\x02$rant\x02");
+		$self->qsay($chan, "$dude: \x02$rant\x02");
+		
+		$dude = uc $dude;
 		$self->qsay($chan, "LOOK! $dude! I SENT YOU A MESSAGE!");
 		$self->qsay($chan, "LOOK! I SENT ANOTHER! $dude!");
 		$self->qsay($chan, "$dude! $dude!");
-		
-		$self->qsay($chan, "[BaconBot] Credits to the rant go to DHowett, and creation to theiostream.");
 	}
 }
 
@@ -45,5 +45,5 @@ my $bot = BaconBot->new(
 	
 	nick => "baconbot",
 	username => "BaconBot",
-	name => "Bacon Coding Company, LLC. bot");
+	name => "Bacon Coding Company, LLC bot v1.0 (by DHowett/theiostream)");
 $bot->run();
